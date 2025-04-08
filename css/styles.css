@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.site-header .container {
+  display: flex;
+}
+
+.site-header .container > :first-child {
+  flex-grow: 1;
+}
