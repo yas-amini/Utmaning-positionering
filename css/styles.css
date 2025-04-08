@@ -3,10 +3,57 @@
   padding: 0;
 }
 
+html {
+  font-size: 1rem;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  background-color: #333;
+  padding: 10px 20px;
+}
+
 .site-header .container {
   display: flex;
+  align-items: center;
 }
 
 .site-header .container > :first-child {
   flex-grow: 1;
+}
+
+.site-header ul.menu {
+  display: flex;
+  gap: 10px;
+}
+
+.site-header ul.menu a {
+  list-style: none;
+  text-decoration: none;
+  gap: 10px;
+  color: white;
+}
+
+.site-header .bi-heart-fill {
+  color: white;
+}
+
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 2rem;
+  }
+
+  .site-header {
+    position: relative;
+    top: 0;
+    background-color: #333;
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 3rem;
+  }
 }
